@@ -1,0 +1,36 @@
+/*==========================================================================================
+	
+Media CSS File
+This file contains all styles for responsive layout
+
+==========================================================================================*/
+
+
+/*----------------------------------------------------*/
+/*	1.	lower that 1024px
+/*----------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+	
+	#wrapper {width:100%;}
+	.wrap {padding:30px 30px 0 30px;}
+	#header .logo {display:none;}
+	#header .site-title {display:block;}
+	#secondary {display:none;}
+	#secondary.visible {display:block;}
+	#mobile-menu {display:block;float:right;width:96px;height:96px;background: url(../img/menu.png) no-repeat 22px 18px;}
+	#sidebar {position:static;width:100%;height:auto!important;background-color:#484848;}
+	#sidebar .widget.widget_search {border:0;border-bottom:1px solid #3d3d3d;padding:0 15px 15px 15px;}
+	#sidebar .search-field {background-color:#fff;}
+	#sidebar .widget-title {color:#fff;}
+	#sidebar #menu-main {border-bottom:1px solid #3d3d3d;}
+	#sidebar .menu {border-top:0;margin:0 0 15px 0;}
+	#sidebar .widget_nav_menu .menu {margin-bottom:0;}
+	#sidebar .menu li a {border-bottom:1px solid #3d3d3d;color:#fff;}
+	#sidebar .menu li a:hover {background-color:#a2c02f;color:#fff;}
+	#sidebar .widget {border-bottom:1px solid #3d3d3d;}
+	#sidebar .tagcloud a {background-color:#6e6e6e;color:#fff!important;}
+	#sidebar .tagcloud a:hover {background-color:#a2c02f;}
+	#container {width:100%;margin:0;}
+	#footer {display:none;}
+	
+}
