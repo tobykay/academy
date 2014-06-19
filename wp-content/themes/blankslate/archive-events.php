@@ -24,21 +24,21 @@
                          
                           
                          <div class="row"> 
-                           <div class="grid_3"><img src="http://placekitten.com/g/190/110"></div> <div class="grid_5">
-                          <p class="smltitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                           <div class="grid_3"><img src="<?php the_field('thumbnail'); ?>" width="190px"></div> <div class="grid_5">
+                          <p class="smltitle"><?php the_title(); ?></a></p>
                            
-                                             <?php
+                                         <p class="smlcaption"><?php
  
 $dateformatstring = "l d F, Y";
 $unixtimestamp = strtotime(get_field('start_date'));
  
 echo date_i18n($dateformatstring, $unixtimestamp);
  
-?>
+                                              ?></p>
                            
                       
                 <p class="smlcaption"><?php the_excerpt(); ?></p>
-                          <p><span class="keywords"><?php the_tags(); ?></span></p>
+                          <p><a href="<?php the_field('eventurl'); ?>" target="_blank">Find out more...</a></p>
                        
                        
                        </div>
@@ -56,7 +56,7 @@ echo date_i18n($dateformatstring, $unixtimestamp);
 
 
 <?php endwhile; endif; ?>
-
+<?php wp_pagenavi(); ?>
  </div> 
 
 

@@ -63,7 +63,7 @@ echo date_i18n($dateformatstring, $unixtimestamp);
           
           
           
-          <p><a href="<?php echo site_url(); ?>/events/">See all</a></p>
+          <p><a href="<?php echo site_url(); ?>/events/" style="color:white;">See all</a></p>
           
           
           
