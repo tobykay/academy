@@ -24,10 +24,10 @@
     </script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="http://pyke-php-83305.euw1.nitrousbox.com:80/wordpress/wp-content/themes/blankslate/css/base.css">
-	<link rel="stylesheet" href="http://pyke-php-83305.euw1.nitrousbox.com:80/wordpress/wp-content/themes/blankslate/css/amazium.css">
-    <link rel="stylesheet" href="http://pyke-php-83305.euw1.nitrousbox.com:80/wordpress/wp-content/themes/blankslate/css/form.css">
-	<link rel="stylesheet" href="http://pyke-php-83305.euw1.nitrousbox.com:80/wordpress/wp-content/themes/blankslate/css/layout.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/base.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/amazium.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/form.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/layout.css">
 
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="http://www.interelgroup.com/themes/interel/images/favicon.ico">
@@ -49,7 +49,7 @@
     
 <div class="row ">
     <div class="grid_5 ">
-      <a href="/"><img src="http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/img/logo.png"></a>
+      <a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
     </div>
     <div class="grid_7 txt-right hide-mobile">
         <ul class="navlist">

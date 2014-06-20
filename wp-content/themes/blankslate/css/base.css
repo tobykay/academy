@@ -8,9 +8,9 @@
 /***** Reset & Basics *****/
 
 
-@font-face{font-family:'FuturaStdBold';src:url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/FuturaStd-Bold.eot');src:url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/FuturaStd-Bold.woff') format('woff'),url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/FuturaStd-Bold.otf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'FuturaStdBook';src:url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/FuturaStd-Book.eot');src:url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/FuturaStd-Book.woff') format('woff'),url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/FuturaStd-Book.otf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family: 'ITCAvantGardeStd-Demi';src: url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/2561C0_0_0.eot');src: url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/2561C0_0_0.eot?#iefix') format('embedded-opentype'),url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/2561C0_0_0.woff') format('woff'),url('http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/fonts/2561C0_0_0.ttf') format('truetype');}
+@font-face{font-family:'FuturaStdBold';src:url('../fonts/FuturaStd-Bold.woff') format('woff'),url('../fonts/FuturaStd-Bold.otf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'FuturaStdBook';src:url('../fonts/FuturaStd-Book.woff') format('woff'),url('../fonts/FuturaStd-Book.otf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family: 'ITCAvantGardeStd-Demi';src: url('../fonts/2561C0_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2561C0_0_0.woff') format('woff'),url('../fonts/2561C0_0_0.ttf') format('truetype');}
 
 
 html, body, div, span, applet,
@@ -252,14 +252,14 @@ img.homepic                                     {margin-bottom:15px; margin-top:
 .btmspace .infotextsml                          {margin-bottom:15px !important;}
 .btmspace p.smlcaption {margin-top:5px !important; font-size:12px; line-height:150% !important;}
 
-ul.useful li                                    {list-style-type: none; padding-right: 10px; font-family: arial, sans-serif; font-size:12px; color: #333; background: url(http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/img/doc.jpg); background-repeat:no-repeat; background-position:left; padding-left:20px !important;}
+ul.useful li                                    {list-style-type: none; padding-right: 10px; font-family: arial, sans-serif; font-size:12px; color: #333; background: url(../img/doc.jpg); background-repeat:no-repeat; background-position:left; padding-left:20px !important;}
 
 .footer                                         {background-color:#3B3A3C; height:100px; }
 ul.navfooter li                                 {display: inline; list-style-type: none; padding-right: 2px; background:none; font-family: arial, sans-serif; font-size:11px; color: #fff;  text-transform:uppercase;}
 ul.navfooter  li a                              {text-decoration: none; color: #fff;}
 ul.navfooter  li a:hover                        {color: #999;}
 
-.twitter                                        {height:170px; margin-bottom:20px !important; padding:15px; background:url(http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/img/twitter.png) no-repeat 20px 20px; background-color:#BFFFFF;}
+.twitter                                        {height:170px; margin-bottom:20px !important; padding:15px; background:url(../img/twitter.png) no-repeat 20px 20px; background-color:#BFFFFF;}
 .twittertext                                    {display:block; margin-left:40px; margin-right:15px; margin-top:5px; margin-bottom:10px;}
 .events                                        {background-color:#888; height:170px; margin-bottom:20px !important; padding:20px; color:#fff;}
 
