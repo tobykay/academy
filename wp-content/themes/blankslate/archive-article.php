@@ -17,9 +17,7 @@
   
           
                      <div class="row btmspace">
-                        <!--<div class="grid_2">
-                            <img src="http://placekitten.com/g/140/80">
-                        </div>-->
+                 
                         <div class="grid_8">
                          
                           

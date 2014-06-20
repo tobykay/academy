@@ -3,6 +3,9 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php wp_title( ' | ', true, 'right' ); ?></title>
+   <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="480">
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <?php wp_head(); ?>
   <meta name="description" content="">
@@ -36,19 +39,19 @@
 <body <?php body_class(); ?>>
 
 
-<div class="row">
+<div class="row hide-mobile">
     <div class="grid_12 txt-right topcontact">
-        <a href="tel:00442075923800">T: + 44 (0)20 7592 3800</a> &bull; <a href="mailto:info@interelgroup.com">E: academy@interelgroup.com</a>
+        <a href="tel:00442075923800">T: + 44 (0)20 7592 3800</a> &bull; <a href="mailto:academy@interelgroup.com">E: academy@interelgroup.com</a>
     </div>
 </div>
     
     
     
-<div class="row">
+<div class="row ">
     <div class="grid_5 ">
       <a href="/"><img src="http://pyke-php-83305.euw1.nitrousbox.com/wordpress/wp-content/themes/blankslate/img/logo.png"></a>
     </div>
-    <div class="grid_7 txt-right">
+    <div class="grid_7 txt-right hide-mobile">
         <ul class="navlist">
          <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
         </ul>

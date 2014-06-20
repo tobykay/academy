@@ -76,12 +76,7 @@ echo date_i18n($dateformatstring, $unixtimestamp);
             <div class="grid_8">
                    <h2>Latest articles</h2> 
                 <hr />
-      
-  
     
-              
-             
-              
             <div class="row">       <?php  $query = new WP_Query(array(
     "post_type" => "article",
   'postsperpage' => '4'
@@ -90,7 +85,8 @@ while ($query->have_posts()) : $query->the_post(); ?>
                 <div class="grid_4">
                      <div class="row">
                         <div class="grid_2">
-                            <img src="<?php	echo  get_field('main_image'); ?>" width="140px" height="80px">
+                            <img src="<?php	echo  get_field('main_image'); ?>" width="140px" height="80px" class="hide-mobile">
+                           <img src="<?php	echo  get_field('main_image'); ?>" width="100%"  class="hide-screen">
                         </div>
                         <div class="grid_2">
                 <p class="smltitle"><?php the_title(); ?></p>

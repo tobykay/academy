@@ -24,7 +24,12 @@
                          
                           
                          <div class="row"> 
-                           <div class="grid_3"><img src="<?php the_field('thumbnail'); ?>" width="190px"></div> <div class="grid_5">
+                           <div class="grid_3"><img src="<?php the_field('thumbnail'); ?>" width="190px" class="hide-mobile">
+                           
+                           <img src="<?php the_field('thumbnail'); ?>" width="100%"  class="hide-screen">
+                           
+                           
+                           </div> <div class="grid_5">
                           <p class="smltitle"><?php the_title(); ?></a></p>
                            
                                          <p class="smlcaption"><?php

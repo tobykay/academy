@@ -222,9 +222,14 @@ textarea:focus, button:focus                    { outline: none; }
 .topcontact a:hover                             {color: #000;}
 
 .navlist                                        {margin-top:40px;}
-ul.navlist li                                   {display: inline; list-style-type: none; padding-right: 5px; background:none; font-family: arial, sans-serif; font-size:12px; color: #333; font-weight:bold; text-transform:uppercase;}
+ul.navlist li                                   {display: inline; list-style-type: none;  background:none; font-family: arial, sans-serif; font-size:12px; color: #333; font-weight:bold; text-transform:uppercase;}
 ul.navlist li a                                 {text-decoration: none;}
 ul.navlist li a:hover                           {color: #999;}
+
+ul.navfooter li                                   {display: inline; list-style-type: none;  background:none; font-family: arial, sans-serif; font-size:12px; color: #333; font-weight:bold; text-transform:uppercase;}
+ul.navfooter li a                                 {text-decoration: none;}
+ul.navfooter li a:hover                           {color: #999;}
+
 
 
 h1                                              {font-family: 'ITCAvantGardeStd-Demi', arial, sans-serif; font-size:36px; color: #333;}
@@ -287,3 +292,13 @@ width: 200px;
  
 } 
 #searchform {margin-top:-20px; margin-bottom:40px;}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+

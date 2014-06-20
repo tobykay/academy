@@ -8,8 +8,12 @@ add_theme_support( 'post-thumbnails' );
 global $content_width;
 if ( ! isset( $content_width ) ) $content_width = 640;
 register_nav_menus(
-array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
-);
+array( 
+  'main-menu' => __( 'Main Menu', 'blankslate' ),
+  'footer-menu' => __( 'Footer Menu' ),
+  'hygiene-menu' => __( 'Hygiene Menu' )
+)
+);  
 }
 add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
 function blankslate_load_scripts()

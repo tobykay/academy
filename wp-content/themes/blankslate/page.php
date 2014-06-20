@@ -34,9 +34,9 @@ if(get_field('pullquote'))
             <p  class="caption">
             
               <?php the_content(); ?></p>
- <br /><br />     
+      <span class="hide-mobile"> <br /><br />    </span> 
         
-
+<hr class="hide-desktop">
         
          </div>    
        

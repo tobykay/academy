@@ -4,20 +4,14 @@
 <div class="row">
     <div class="grid_12 footer">
         <div class="grid_7">
-        <ul class="navfooter">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Learning materials</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Interel</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+          <span class="mobilecenter"><ul class="navfooter">
+           <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+        </ul></span>
         </div>
         <div class="grid_4 txt-right">
-        <ul class="navfooter">
-            <li><a href="#">Terms &amp; conditions</a></li>
-            <li><a href="#">Cookie policy</a></li>
-        </ul>
+          <span class="mobilecenter"><ul class="navfooter">
+            <?php wp_nav_menu( array( 'theme_location' => 'hygiene-menu' ) ); ?>
+        </ul></span>
         </div>
         
         
