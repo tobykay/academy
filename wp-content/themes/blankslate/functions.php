@@ -50,6 +50,23 @@ register_sidebar( array (
 'after_title' => '</h3>',
 ) );
 }
+
+
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+if ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $post_type = get_query_var('post_type');
+	if($post_type)
+	    $post_type = $post_type;
+	else
+	    $post_type = array('post','learning-materials'); // replace cpt to your custom post type
+    $query->set('post_type',$post_type);
+	return $query;
+    }
+}
+
+
+
 function blankslate_custom_pings( $comment )
 {
 $GLOBALS['comment'] = $comment;

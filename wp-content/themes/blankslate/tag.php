@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="grid_8 ">
-       <h2><?php _e( 'Tag Archives: ', 'blankslate' ); ?><?php single_tag_title(); ?></h2>
+       <h2><?php _e( 'Learning materials for: ', 'blankslate' ); ?><?php single_tag_title(); ?></h2>
        <hr />
       
        
@@ -20,8 +20,10 @@
                             <img src="http://placekitten.com/g/140/80">
                         </div>-->
                         <div class="grid_8">
-                          <p class="smltitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-                <p class="smlcaption"><?php the_excerpt(); ?><span class="keywords"><?php the_tags(); ?></span></p>
+                          <p class="smltitle"><?php the_title(); ?></p>
+                          
+                <p class="smlcaption"><?php the_excerpt(); ?></span></p>
+                           <p><a href="<?php the_field('download'); ?>" target="_blank">Download here</a></p>
                         </div>
                     </div>
         <hr />

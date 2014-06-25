@@ -5,7 +5,7 @@
 <div class="row">
     <div class="grid_8 ">
        <h1 class="smlmargintop">Events</h1>
-      <p>Interel is at the heart of a global partnership of independent public affairs consultancies spanning some 43 countries and over 1000 consultants.  This section of the Academy provides first hand insight and local expertise in public affairs in these global markets.</p>
+      <p>Keep up-to-date with the latest events in Public Affairs.</p>
        <hr />
       
        

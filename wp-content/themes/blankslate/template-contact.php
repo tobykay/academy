@@ -15,10 +15,7 @@ Template Name: Contact
 <div class="row">
     <div class="grid_8 ">
         <h1 class="entry-title"><?php the_title(); ?></h1> 
-        <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?><br /><br />
-   
-        
-        
+        <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>       
       
         
         

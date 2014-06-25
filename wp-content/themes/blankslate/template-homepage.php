@@ -37,7 +37,7 @@ Template Name: Homepage
           
         <?php  $query = new WP_Query(array(
     "post_type" => "events",
-  'postsperpage' => '1'
+  'posts_per_page' => '1'
 ));
 while ($query->have_posts()) : $query->the_post(); ?>
 
