@@ -35,7 +35,7 @@ nav, section                                    { display:block; }
 
 body                                            { line-height:1; }
 
-ol, ul                                          { list-style:none; }
+#sidebar ol, #sidebar ul, #sidebar ul li                                          { list-style:none; background:none; }
 
 blockquote, q                                   { quotes:none; }
 
@@ -84,7 +84,8 @@ div                                             { box-sizing:border-box; -webkit
 
 ul, ol                                          { margin:26px 0 36px 0; display:block; }
 ul                                              { list-style:none outside; }
-ul li                                           { margin:0 0 0 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../img/bullet.png') no-repeat 0 3px; }
+ul li                                           { margin:0 0 0 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../img/bullet.png') no-repeat 0 3px; font-size: 12px;
+ }
 
 ul ul, ul ol                                    { margin:11px 0 5px 0; }
 ol ol, ol ul                                    { margin:8px 0 5px 20px; }
@@ -252,7 +253,7 @@ img.homepic                                     {margin-bottom:15px; margin-top:
 .btmspace .infotextsml                          {margin-bottom:15px !important;}
 .btmspace p.smlcaption {margin-top:5px !important; font-size:12px; line-height:150% !important;}
 
-ul.useful li                                    {list-style-type: none; padding-right: 10px; font-family: arial, sans-serif; font-size:12px; color: #333; background: url(../img/doc.jpg); background-repeat:no-repeat; background-position:left; padding-left:20px !important;}
+ul.useful li                                    {list-style-type: none; padding-right: 10px; font-family: arial, sans-serif; font-size:12px; color: #333; background: url(../img/doc.jpg) !important; background-repeat:no-repeat !important; background-position:left !important; padding-left:20px !important;}
 
 .footer                                         {background-color:#3B3A3C; height:100px; }
 ul.navfooter li                                 {display: inline; list-style-type: none; padding-right: 2px; background:none; font-family: arial, sans-serif; font-size:11px; color: #fff;  text-transform:uppercase;}

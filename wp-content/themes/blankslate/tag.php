@@ -33,7 +33,27 @@
 
 
 <?php endwhile; endif; ?>
+<div class="navigation">
+	<?php
+	// Bring $wp_query into the scope of the function
+	global $wp_query;
 
+	// Backup the original property value
+	$backup_page_total = $wp_query->max_num_pages;
+
+	// Copy the custom query property to the $wp_query object
+	$wp_query->max_num_pages = $loop->max_num_pages;
+	?>
+
+	<!-- now show the paging links -->
+	<div class="alignleft"><?php previous_posts_link('Previous Entries'); ?></div>
+	<div class="alignright"><?php next_posts_link('Next Entries'); ?></div>
+
+	<?php
+	// Finally restore the $wp_query property to it's original value
+	$wp_query->max_num_pages = $backup_page_total;
+	?>
+</div>
  </div> 
 
 
