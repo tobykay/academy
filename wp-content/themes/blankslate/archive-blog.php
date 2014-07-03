@@ -10,9 +10,10 @@ get_header(); ?>
        <hr />
       
        
-<?php query_posts('posts_per_page=15'); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  <?php while (have_posts()) : the_post(); ?>
+
+
 
 
   
@@ -31,9 +32,12 @@ get_header(); ?>
              
                     
 
+  <?php endwhile; ?>
 
- <?php endwhile;?> 
-
+<div id="navig">
+       <?php if (function_exists('wp_pagenavi')){wp_pagenavi();}?>
+ 
+    </div> <?php endif;?> 
  </div> 
 
 

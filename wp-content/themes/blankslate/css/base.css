@@ -273,7 +273,7 @@ ul.navfooter  li a:hover                        {color: #999;}
 
 input[type="text"], input[type="password"], textarea {
  
-        background: #f9f9f9;
+        background: #fff;
     border: 1px solid #cccccc;
     box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
     -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);

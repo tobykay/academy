@@ -13,9 +13,29 @@ else { _e( 'Archives', 'blankslate' ); }
        <hr />
       
        
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php
 
+/**
+ * The logic for displaying a collection gallery
+ */
 
+wp_reset_postdata();
+global $post;
+
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$my_items = array(
+    'post_type' => 'article',
+    'numberposts' => -1,
+    'orderby' => 'title',
+    'order' => 'ASC',
+    'posts_per_page'   => 2,
+    'paged' => $paged
+);
+
+$my_postlist = new WP_Query( $my_items );
+
+if($my_postlist->have_posts()) : while($my_postlist->have_posts()) : $my_postlist->the_post();
+?>
 
 
   
@@ -36,7 +56,7 @@ else { _e( 'Archives', 'blankslate' ); }
 
 
 <?php endwhile; endif; ?>
-
+<?php if ($my_postlist) : wp_reset_query(); wp_pagenavi( array( 'query' => $my_postlist) ); wp_reset_postdata(); endif; ?>
  </div> 
 
 

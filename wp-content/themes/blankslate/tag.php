@@ -8,9 +8,29 @@
        <hr />
       
        
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php
 
+/**
+ * The logic for displaying a collection gallery
+ */
 
+wp_reset_postdata();
+global $post;
+
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$my_items = array(
+    'post_type' => 'learning-materials',
+    'numberposts' => -1,
+    'orderby' => 'title',
+    'order' => 'ASC',
+    'posts_per_page'   => 10,
+    'paged' => $paged
+);
+
+$my_postlist = new WP_Query( $my_items );
+
+if($my_postlist->have_posts()) : while($my_postlist->have_posts()) : $my_postlist->the_post();
+?>
 
 
   
@@ -22,7 +42,7 @@
                         <div class="grid_8">
                           <p class="smltitle"><?php the_title(); ?></p>
                           
-                <p class="smlcaption"><?php the_excerpt(); ?></span></p>
+                <p class="smlcaption"><?php the_excerpt(); ?><span class="keywords"><?php the_tags(); ?></span></p>
                            <p><a href="<?php the_field('download'); ?>" target="_blank">Download here</a></p>
                         </div>
                     </div>
@@ -33,27 +53,8 @@
 
 
 <?php endwhile; endif; ?>
-<div class="navigation">
-	<?php
-	// Bring $wp_query into the scope of the function
-	global $wp_query;
-
-	// Backup the original property value
-	$backup_page_total = $wp_query->max_num_pages;
-
-	// Copy the custom query property to the $wp_query object
-	$wp_query->max_num_pages = $loop->max_num_pages;
-	?>
-
-	<!-- now show the paging links -->
-	<div class="alignleft"><?php previous_posts_link('Previous Entries'); ?></div>
-	<div class="alignright"><?php next_posts_link('Next Entries'); ?></div>
-
-	<?php
-	// Finally restore the $wp_query property to it's original value
-	$wp_query->max_num_pages = $backup_page_total;
-	?>
-</div>
+<?php
+if ($my_postlist) : wp_reset_query(); wp_pagenavi( array( 'query' => $my_postlist) ); wp_reset_postdata(); endif; ?>
  </div> 
 
 

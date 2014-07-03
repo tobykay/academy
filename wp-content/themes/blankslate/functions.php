@@ -1,4 +1,11 @@
 <?php
+
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
+
+
+
 add_action( 'after_setup_theme', 'blankslate_setup' );
 function blankslate_setup()
 {
@@ -65,7 +72,17 @@ if ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] 
     }
 }
 
-
+/**
+ * Function and filter to force tag.php (tag archives) to display only video custom post types. 
+ */
+function add_custom_types_to_tag_archives( $query ) {
+    if( is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+        $post_types = array( 'learning-materials' );
+        $query->set( 'post_type', $post_types );
+        return $query;
+    }
+}
+add_filter( 'pre_get_posts', 'add_custom_types_to_tag_archives' ); 
 
 function blankslate_custom_pings( $comment )
 {
