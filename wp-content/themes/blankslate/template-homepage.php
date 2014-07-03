@@ -79,7 +79,7 @@ echo date_i18n($dateformatstring, $unixtimestamp);
     
             <div class="row">       <?php  $query = new WP_Query(array(
     "post_type" => "article",
-  'postsperpage' => '4'
+  'posts_per_page' => '4'
 ));
 while ($query->have_posts()) : $query->the_post(); ?>
                 <div class="grid_4">
@@ -90,7 +90,7 @@ while ($query->have_posts()) : $query->the_post(); ?>
                         </div>
                         <div class="grid_2">
                 <p class="smltitle"><?php the_title(); ?></p>
-                <p class="smlcaption"><a href="<?php the_permalink(); ?>"><?php echo substr(get_the_excerpt(), 0,35); ?>...</a></p>
+                <p class="smlcaption"><a href="<?php the_permalink(); ?>">Read more...</a></p>
                         </div>
                     </div>
               </div>  
