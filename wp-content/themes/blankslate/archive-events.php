@@ -9,29 +9,9 @@
        <hr />
       
        
-<?php
+  <?php while ( have_posts() ) : the_post(); ?>
+  
 
-/**
- * The logic for displaying a collection gallery
- */
-
-wp_reset_postdata();
-global $post;
-
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$my_items = array(
-    'post_type' => 'events',
-    'numberposts' => -1,
-    'orderby' => 'title',
-    'order' => 'ASC',
-    'posts_per_page'   => 10,
-    'paged' => $paged
-);
-
-$my_postlist = new WP_Query( $my_items );
-
-if($my_postlist->have_posts()) : while($my_postlist->have_posts()) : $my_postlist->the_post();
-?>
 
 
   
@@ -75,14 +55,13 @@ echo date_i18n($dateformatstring, $unixtimestamp);
                        
                     </div> </div>
         <hr />
-        
+       
              
                     
 
 
-<?php endwhile; endif; ?>
-<?php if ($my_postlist) : wp_reset_query(); wp_pagenavi( array( 'query' => $my_postlist) ); wp_reset_postdata(); endif; ?>
-
+<?php endwhile; ?>
+<?php wp_pagenavi(); ?>
  </div> 
 
 
