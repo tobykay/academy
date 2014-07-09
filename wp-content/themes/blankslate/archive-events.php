@@ -5,7 +5,7 @@
 <div class="row">
     <div class="grid_8 ">
        <h1 class="smlmargintop">Events</h1>
-      <p>Keep up-to-date with the latest events in Public Affairs.</p>
+      <p>Keep up-to-date with the latest events in Public Affairs. This page is under construction - please do get in contact if there are events you wish to promote...</p>
        <hr />
       
        
